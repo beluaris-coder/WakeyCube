@@ -12,8 +12,6 @@ import BloqueHistorial from "./BloqueHistorial";
 import BloqueTexto from "./BloqueTexto";
 import BloqueLista from "./BloqueLista";
 import BloqueAcciones from "./BloqueAcciones";
-import BloqueDuracion from "./BloqueDuracion";
-
 
 const DetalleEscena = () => {
   const { id } = useParams();
@@ -61,7 +59,6 @@ const DetalleEscena = () => {
       </header>
 
       <BloqueTexto titulo="Descripción" texto={descripcion} />
-      <BloqueDuracion titulo="Duración" texto={duracion} />
       <BloqueLista titulo="Días y horarios programados" items={diasHorarios} mensaje="No hay horarios definidos." />
       <BloqueAcciones acciones={acciones} />
       <BloqueHistorial historial={historial} />

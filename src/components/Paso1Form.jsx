@@ -15,17 +15,6 @@ const Paso1Form = (props) => {
                 <p className="text-xs text-gray-500 mb-1"> Elegí uno o varios días de la semana y un horario para ejecutar esta escena.</p>
                 <SelectorHorarios value={horarios} onChange={setHorarios} />
             </div>
-
-            <div className="bg-white rounded-xl shadow-sm p-4">
-                <label className="text-sm font-semibold">Duración (minutos)</label>
-                <p className="text-xs text-gray-500 mb-1">La escena se detendrá automáticamente luego de este tiempo. Si quiere detenerla manualmente ingrese 0.</p>
-                <input type="number" min={0} step={1} className="border rounded-lg px-3 py-1.5 text-sm w-32" value={duracion ?? ""}
-                    onChange={(e) => {
-                        const val = e.target.value;
-                        // permitimos cadena vacía o número; no forzamos a Number aquí
-                        setDuracion(val === "" ? "" : String(Math.max(0, Number(val))));
-                    }} />
-            </div>
         </div>
     );
 };

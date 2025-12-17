@@ -65,7 +65,7 @@ const PantallaApagar = () => {
         <div className="h-screen w-full bg-linear-to-br from-pink-200 via-violet-200 to-blue-200 flex items-center justify-center p-8">
             {!tieneGiroscopio ? (
                 <div className="w-full flex flex-col gap-y-55 pb-60 items-center">
-                    <img src="/LOGO.png" alt="logo" className="w-45" />
+                    <img src="/LOGO.webp" alt="logo" className="w-45" />
                     <Button
                         type="button"
                         variante="primario"
